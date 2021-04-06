@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html prefix="
+og: http://ogp.me/ns# article: http://ogp.me/ns/article#
+" lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Instalar Git | Python Ecuador</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<meta name="theme-color" content="#5670d4">
+<meta name="generator" content="Nikola (getnikola.com)">
+<link rel="alternate" type="application/rss+xml" title="RSS" hreflang="es" href="../../rss.xml">
+<link rel="canonical" href="https://python.ec/guias/git/">
+<link rel="icon" href="../../favicon.ico" sizes="16x16">
+<link rel="icon" href="../../icon_128x128.ico" sizes="128x128">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><!-- Custom css --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../../assets/css/custom.css" type="text/css" media="all">
+<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "5b3ba8da96094f18ab12fd5608de0b55"}'></script><!-- End Cloudflare Web Analytics -->
+</head>
+<body>
+<a href="#content" class="sr-only sr-only-focusable">Ir al contenido principal</a>
+
+<!-- Menubar -->
+
+<nav class="navbar navbar-expand-md static-top mb-4
+navbar-dark bg-dark
+"><div class="container">
+<!-- This keeps the margins nice -->
+        <a class="navbar-brand" href="../../">
+
+            <span id="blog-title">Python Ecuador</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="bs-navbar">
+            <ul class="navbar-nav mr-auto">
+<li class="nav-item">
+<a href="../../nuestra-comunidad/" class="nav-link">Comunidad</a>
+                </li>
+<li class="nav-item">
+<a href="../../archive.html" class="nav-link">Posts</a>
+                </li>
+<li class="nav-item">
+<a href="../../coc/" class="nav-link">Código de Conducta</a>
+                </li>
+<li class="nav-item">
+<a href="../../quiero-ayudar/" class="nav-link">Quiero ayudar</a>
+                </li>
+<li class="nav-item">
+<a href="../" class="nav-link">Guías</a>
+                </li>
+<li class="nav-item">
+<a href="../../eventos/" class="nav-link">Eventos</a>
+                </li>
+<li class="nav-item">
+<a href="../../becas/" class="nav-link">Becas</a>
+                </li>
+<li class="nav-item">
+<a href="../../sponsors/" class="nav-link">Sponsors</a>
+
+                
+            </li>
+</ul>
+<ul class="navbar-nav navbar-right"></ul>
+</div>
+<!-- /.navbar-collapse -->
+    </div>
+<!-- /.container -->
+</nav><!-- End of Menubar --><div class="container" id="content" role="main">
+    <div class="body-content">
+        <!--Body content-->
+        
+  <div class="container pt mb">
+    <div class="row justify-content-md-center">
+      <div class="col-sm-8">
+  <h1>
+    <a href=".">Instalar Git</a>
+  </h1>
+
+  <div>
+<section id="instalar-git-en-ubuntu-debian"><h2>Instalar Git en Ubuntu/Debian</h2>
+<p>Antes de instalar es recomendable ejecutar las actualizaciones de paquetes del sistema operativo, por ende abrimos una terminal y ejecutamos lo siguiente:</p>
+<p>Para actualizar los repositorios.</p>
+<pre class="code console"><a name="rest_code_b46a9c4045594bd7beb8094ca7e79824-1"></a><span class="gp">$ </span>sudo apt-get update
+</pre>
+<p>Para actualizar los paquetes en el sistema.</p>
+<pre class="code console"><a name="rest_code_e4e5094264b2444c84e12130ab9e7524-1"></a><span class="gp">$ </span>sudo apt-get upgrade
+</pre>
+<p>Luego procedemos a instalar git con el comando install.</p>
+<pre class="code console"><a name="rest_code_1cea6caf7d86495fbbaf9be16e9da502-1"></a><span class="gp">$ </span>sudo apt-get install git
+</pre>
+<p>Este comando instalará git y sus paquetes necesarios.</p>
+<img alt="/images/guias/git/git_install.png" class="align-center" src="../../images/guias/git/git_install.png"><div class="line-block">
+<div class="line"><br></div>
+</div>
+<p>Comprobamos que se haya instalado correctamente con:</p>
+<pre class="code console"><a name="rest_code_941cafbadf854b748f02e70c9b97f9e8-1"></a><span class="gp">$ </span>git --version
+<a name="rest_code_941cafbadf854b748f02e70c9b97f9e8-2"></a><span class="go">git version 2.25.1</span>
+</pre></section><section id="instalar-git-en-fedora"><h2>Instalar Git en Fedora</h2>
+<p>Instalar mediante DNF (o Yum en versiones mas antiguas de Fedora)</p>
+<pre class="code console"><a name="rest_code_3f8f579a8ea14a80add7743447f88a9e-1"></a><span class="gp">$ </span>sudo dnf install git
+<a name="rest_code_3f8f579a8ea14a80add7743447f88a9e-2"></a><span class="go">o</span>
+<a name="rest_code_3f8f579a8ea14a80add7743447f88a9e-3"></a><span class="gp">$ </span>sudo yum install git
+</pre>
+<p>Comprobamos que se haya instalado correctamente con:</p>
+<pre class="code console"><a name="rest_code_2c8cc08273d04e219fb1403331d84a06-1"></a><span class="gp">$ </span>git --version
+<a name="rest_code_2c8cc08273d04e219fb1403331d84a06-2"></a><span class="go">git version 2.25.1</span>
+</pre></section>
+</div>
+      </div>
+    </div>
+  </div>
+        <!--End of body content-->
+
+        <footer id="footer"><div class="container">
+    <div class="row text-center">
+        <div class="col">
+            <strong>Síguenos y forma parte de nuestra comunidad</strong>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <ul class="list-inline social text-center">
+<li class="list-inline-item"><a href="https://www.facebook.com/pyecuador/"><i class="fa fa-facebook"></i></a></li>
+                <li class="list-inline-item">
+<a href="https://www.meetup.com/es-ES/python-ecuador/"><i class="fa fa-meetup"></i></a>
+                </li>
+<li class="list-inline-item"><a href="https://github.com/PythonEcuador"><i class="fa fa-github"></i></a></li>
+                <li class="list-inline-item"><a href="https://t.me/pythonecuador"><i class="fa fa-telegram"></i></a></li>
+                <li class="list-inline-item"><a href="https://twitter.com/pyecuador"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+</div>
+        
+    </div>
+    <div class="row text-center">
+        <div class="col">
+            <p>Comunidad Python Ecuador</p>
+            <small>© 2021 Todos los derechos reservados.</small>
+            <p>
+                <small>
+                    ¿Encontraste un error?
+                    <a href="https://python.ec/guias/colaborar/#reportando-errores-bugs">¡Repórtalo!</a>
+                </small>
+            </p>
+        </div>
+    </div>
+</div>
+
+            
+        </footer>
+</div>
+</div>
+
+        <script src="../../assets/js/all-nocdn.js"></script><script>
+    baguetteBox.run('div#content', {
+        ignoreClass: 'islink',
+        captions: function(element) {
+            return element.getElementsByTagName('img')[0].alt;
+    }});
+    </script>
+</body>
+</html>
